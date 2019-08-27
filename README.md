@@ -4,4 +4,4 @@
 see their location on the map. In addition, when the marker is clicked on, you can see a picture of the school, its Google rating and
 a link to the school's website.* 
 
-*Made with Vanilla JS + jQuery for Chingu Voyage 11 (Solo Project)*
+*Made with Vanilla JS + jQuery + Mapbox API for Chingu Voyage 11 (Solo Project)*
