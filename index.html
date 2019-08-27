@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>English School Finder</title>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <div class="wrapper">
+
+        <div class="sidebar-wrapper">
+
+                <div class="sidebar-button-div">
+                    <button class="hide-menu">☰</button>
+                </div>
+
+                <div class="sidebar-header-div">
+                    <h2 class="sidebar-header">Use the filters below to find an English school:</h2>
+                </div>
+
+                    <div class="checkbox-div zone-checkbox-div">
+                        <li><label for="zone-1">Zone 1: </label><input type="checkbox" class="checkbox zone-checkbox" id="zone-1"></input></li>
+                        <li><label for="zone-2">Zone 2: </label><input type="checkbox" class="checkbox zone-checkbox" id="zone-2"></input></li>
+                        <li><label for="zone-3">Zone 3: </label><input type="checkbox" class="checkbox zone-checkbox" id="zone-3"></input></li>
+                        <li><label for="zone-4">Zone 4: </label><input type="checkbox" class="checkbox zone-checkbox" id="zone-4"></input></li>
+                        <li><label for="zone-5">Zone 5: </label><input type="checkbox" class="checkbox zone-checkbox" id="zone-5"></input></li>
+                        <li><label for="zone-6">Zone 6: </label><input type="checkbox" class="checkbox zone-checkbox" id="zone-6"></input></li>
+                    </div>
+
+                    <div class="checkbox-div rating-checkbox-div">
+                        <li><label for="rating-1">Min rating 1: </label><input type="radio" name="rating" value="Min rating: 1" class="checkbox rating-checkbox" id="rating-1"></input></li>
+                        <li><label for="rating-2">Min rating 2: </label><input type="radio" name="rating" value="Min rating: 2" class="checkbox rating-checkbox" id="rating-2"></input></li>
+                        <li><label for="rating-3">Min rating 3: </label><input type="radio" name="rating" value="Min rating: 3" class="checkbox rating-checkbox" id="rating-3"></input></li>
+                        <li><label for="rating-4">Min rating 4: </label><input type="radio" name="rating" value="Min rating: 4" class="checkbox rating-checkbox" id="rating-4"></input></li>
+                </div>
+
+                    <div class="checkbox-div exams-checkbox-div">
+                        <li><label for="IELTS">IELTS: </label><input type="checkbox" class="checkbox exam-checkbox" id="IELTS"></input></li>
+                        <li><label for="TOEFL">TOEFL: </label><input type="checkbox" class="checkbox exam-checkbox" id="TOEFL"></input></li>
+                        <li><label for="PET">PET: </label><input type="checkbox" class="checkbox exam-checkbox" id="PET"></input></li>
+                        <li><label for="FCE">FCE: </label><input type="checkbox" class="checkbox exam-checkbox" id="FCE"></input></li>
+                        <li><label for="CAE">CAE: </label><input type="checkbox" class="checkbox exam-checkbox" id="CAE"></input></li>
+                        <li><label for="CPE">CPE: </label><input type="checkbox" class="checkbox exam-checkbox" id="CPE"></input></li>
+                        <li><label for="TOEIC">TOEIC: </label><input type="checkbox" class="checkbox exam-checkbox" id="TOEIC"></input></li>
+                        <li><label for="GESE">GESE: </label><input type="checkbox" class="checkbox exam-checkbox" id="GESE"></input></li>
+                        <li><label for="ISE">ISE: </label><input type="checkbox" class="checkbox exam-checkbox" id="ISE"></input></li>
+                    </div>
+
+                    <div class="checkbox-div other-checkbox-div">
+                        <li><label for="accessible">Wheelchair accessible:</label><input type="checkbox" class="checkbox other-checkbox" id="accessible"></input></li>
+                        <li><label for="young">Young learners: </label><input type="checkbox" class="checkbox other-checkbox" id="young"></input></li>
+                        <li><label for="accommodation">Accommodation: </label><input type="checkbox" class="checkbox other-checkbox" id="accommodation"></input></li>
+                        <li><label for="private">One to One Lessons: </label><input type="checkbox" class="checkbox other-checkbox" id="private"></input></li>
+                        <li><label for="business">Business English: </label><input type="checkbox" class="checkbox other-checkbox" id="business"></input></li>
+                        <li><label for="accredited">British Council accredited: </label><input type="checkbox" class="checkbox other-checkbox" id="accredited"></input></li>
+                        <li><label for="online">Online lessons: </label><input type="checkbox" class="checkbox other-checkbox" id="online"></input></li>
+                        <li><label for="small">Small classes (6 students or under): </label><input type="checkbox" class="checkbox other-checkbox" id="small"></input></li>
+                    </div>
+
+                    <div class="reset-div">
+                        <button class="reset-button">Reset</button>
+                    </div>
+
+        </div>
+
+
+        <div class="content">
+            <button class="show-menu">☰</button>
+            <div class='map-div'></div>
+        </div>
+
+    </div>
+
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous">
+    </script>
+    <script type="module" src="scripts.js"></script>
+
+</body>
+</html>

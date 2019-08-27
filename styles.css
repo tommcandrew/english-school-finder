@@ -1,0 +1,142 @@
+/* GLOBAL STYLES*/
+
+body { 
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    margin:0; 
+    padding:0;
+}
+
+.wrapper {
+    align-items: stretch;
+    display: flex;
+}
+
+
+
+
+/* SIDEBAR */
+
+.sidebar-wrapper {
+    background: #375087;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 350px;
+    position: absolute;
+    width: 23%;
+    z-index: 2;
+}
+
+.hide-menu {
+    background-color: transparent; 
+    border: none;
+    color: white;
+    float: right;
+    font-size: 2em;
+    margin-right: 5%;
+}
+
+.hide-menu:hover {
+    color: black;
+}
+
+.sidebar-button-div {
+    margin-top: 5%;
+    z-index: 1;
+}
+
+.show-menu {
+    background-color: transparent; 
+    border: none;
+    color: black;
+    font-size: 2em;
+    left: 2%;
+    position: absolute;
+    top: 2%;
+    z-index: 1;
+}
+
+.show-menu:hover {
+    color: white;
+}
+
+.sidebar-header-div {
+    margin: auto;
+    margin-bottom: -5%;
+    margin-top: -5%;
+    width: 75%;
+}
+
+.checkbox-div {
+    font-size: 1.1em;
+    margin-top: 10%;
+    padding-left: 10%;
+    width: 85%;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.checkbox-div li {
+    float: left;
+    list-style: none;
+    padding-left: 2%;
+}
+
+.exams-checkbox-div li {
+    width: 30%;
+}
+
+.other-checkbox-div li {
+    width: 80%;
+}
+
+.reset-div {
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+.reset-button {
+    background: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.1em;
+    padding: 2%;
+}
+
+.reset-button:hover {
+    background: #9ea4ad;
+}
+
+
+
+/* MAP */
+
+.map-div { 
+    bottom: 0; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+} 
+
+.mapboxgl-popup-content {
+    background-color: #375087;
+    color: white;
+    font-size: 1em;
+    text-align: center;
+}
+
+img {
+    max-width: 140px;
+    width: 100%;
+}
+
+a {
+    color: white;
+}
+
+g {
+    fill: #f75757;
+}
